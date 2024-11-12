@@ -23,14 +23,28 @@ class MainActivity : AppCompatActivity() {
 
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
+
+
         btnCalcular.setOnClickListener {
-            val peso: Float = edtPeso.text.toString().toFloat()
-            val altura: Float = edtAltura.text.toString().toFloat()
 
-            val alguraQ2 = altura * altura
-            val resultado = peso / alguraQ2
+            val pesoStr: String = edtPeso.text.toString()
+            val alturaStr: String = edtAltura.text.toString()
 
-            println(resultado)
+            if (pesoStr == "" || alturaStr == "") {
+
+
+
+            } else {
+
+                val peso: Float = edtPeso.text.toString().toFloat()
+                val altura: Float = edtAltura.text.toString().toFloat()
+
+                val alguraQ2 = altura * altura
+                val resultado = peso / alguraQ2
+
+                println(resultado)
+            }
+
         }
 
 
