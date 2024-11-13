@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
             if (pesoStr == "" || alturaStr == "") {
 
 
-
-
             } else {
 
                 val peso: Float = edtPeso.text.toString().toFloat()
