@@ -46,9 +46,3 @@ class MainActivity : AppCompatActivity() {
 
                 println(resultado)
             }
-
-        }
-
-
-    }
-}
