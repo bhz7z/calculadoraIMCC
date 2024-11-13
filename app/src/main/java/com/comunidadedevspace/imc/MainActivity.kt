@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
             if (pesoStr == "" || alturaStr == "") {
                 // Mostrar mensagem para o usuario
 
-                Snackbar.make(edtPeso,"Preencha todos os campo",Snackbar.LENGTH_LONG).show()
+                Snackbar.make(edtPeso, "Preencha todos os campo", Snackbar.LENGTH_LONG).show()
 
             } else {
 
-                val peso: Float = edtPeso.text.toString().toFloat()
-                val altura: Float = edtAltura.text.toString().toFloat()
+                val peso = pesoStr.toFloat()
+                val altura = alturaStr.toFloat()
 
                 val alguraQ2 = altura * altura
                 val resultado = peso / alguraQ2
