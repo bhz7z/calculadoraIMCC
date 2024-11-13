@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
 
             } else {
 
-                val peso = pesoStr.toFloat()
-                val altura = alturaStr.toFloat()
+                val peso: Float = edtPeso.text.toString().toFloat()
+                val altura: Float = edtAltura.text.toString().toFloat()
 
                 val alguraQ2 = altura * altura
                 val resultado = peso / alguraQ2
